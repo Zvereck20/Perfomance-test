@@ -1,0 +1,117 @@
+.feedback {
+  padding-top: 53px;
+  padding-bottom: 40px;
+  background-color: @black-russian;
+
+  h2 {
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+
+  &__form {
+    padding-top: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @media (max-width: @mobile-width) {
+      label {
+        width: 100%;
+      }
+    }
+  }
+
+  &__input {
+    padding-left: 34px;
+    width: 322px;
+    height: 51px;
+    background-color: @white;
+
+    &::placeholder {
+      font-family: "Gotham Pro", "Arial", serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 15px;
+      color: @black;
+    }
+
+    @media (max-width: @descktop-width) {
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: @mobile-width) {
+      width: -webkit-fill-available;
+    }
+  }
+
+  &__button {
+    margin: 0;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+    height: 54px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: @apple;
+    background-color: initial;
+    border: 2px solid @apple;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    svg {
+      padding-left: 17px;
+      stroke: @apple;
+    }
+
+    &:hover,
+    &:focus {
+      color: @white;
+      border: 2px solid @white;
+      transition-duration: 0.5s;
+
+      svg {
+        stroke: @white;
+        transition-duration: 0.5s;
+      }
+    }
+
+    @media (max-width: @mobile-width) {
+      width: 100%;
+    }
+  }
+
+  &__agreement {
+    width: 100%;
+    padding-top: 19px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+    line-height: 16px;
+    color: @white;
+
+    p {
+      width: 28.7%;
+      margin: 0;
+    }
+
+    @media (max-width: @descktop-width) {
+      width: 38%;
+      padding-top: 0;
+
+      p {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: @mobile-width) {
+      width: 100%;
+      padding-top: 20px;
+    }
+  }
+}

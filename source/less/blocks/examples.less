@@ -1,0 +1,67 @@
+.examples {
+  padding-top: 26px;
+
+  &__cards {
+    padding-top: 32px;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    list-style: none;
+
+    @media (max-width: @descktop-width) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    background-color: @white-smoke;
+
+    &:hover {
+      background-color: @white;
+      box-shadow: 0px 9px 36px rgba(0, 0, 0, 0.08);
+      transform: translate(0, -10px);
+      transition-duration: 0.5s;
+    }
+
+    @media (max-width: @descktop-width) {
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: @tablet-width) {
+      flex-basis: 46%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: @mobile-width) {
+      flex-basis: 100%;
+    }
+  }
+
+  &__wrap {
+    padding: 0 24px;
+    padding-top: 21px;
+    padding-bottom: 24px;
+
+    h3 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 15px;
+      letter-spacing: -0.02em;
+      text-transform: lowercase;
+    }
+
+    p {
+      padding-top: 16px;
+      padding-bottom: 32px;
+      margin: 0;
+      font-size: 24px;
+      line-height: 23px;
+    }
+  }
+}

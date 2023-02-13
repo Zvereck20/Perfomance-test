@@ -1,0 +1,71 @@
+.rewievs {
+  padding-top: 41px;
+  position: relative;
+
+  &__rating {
+    padding-top: 24px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__wrap {
+    padding-left: 73px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 31px;
+    display: flex;
+    align-items: center;
+
+    svg {
+      fill: @apple;
+      padding-right: 5px;
+    }
+  }
+
+  &__slider {
+    padding-top: 30px;
+    padding-bottom: 54px;
+  }
+
+  &__img {
+    @media (max-width: @mobile-width) {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  &__btns {
+    position: absolute;
+    padding: 0 15px;
+    width: 66px;
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: @white-smoke;
+    top: 67px;
+    right: 0;
+  }
+
+  &__btn {
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      stroke: @apple;
+    }
+
+    &--prev {
+      transform: rotate(180deg);
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.3;
+    }
+  }
+}

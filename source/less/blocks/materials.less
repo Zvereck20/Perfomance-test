@@ -1,0 +1,70 @@
+.materials {
+  padding-top: 47px;
+
+  &__list {
+    padding-top: 32px;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  &__item {
+    flex-basis: 31.8%;
+    margin-bottom: 28px;
+
+    &:hover,
+    &:focus {
+      background-color: @white;
+      box-shadow: 0px 9px 36px rgba(0, 0, 0, 0.08);
+    }
+
+    @media (max-width: @tablet-width) {
+      flex-basis: 46%;
+    }
+
+    @media (max-width: @mobile-width) {
+      flex-basis: 100%;
+    }
+  }
+
+  &__wrap {
+    padding-top: 23px;
+    padding-left: 20px;
+
+    h3 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    ul {
+      padding-top: 19px;
+      padding-left: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    li {
+      padding-left: 35px;
+      padding-bottom: 20px;
+      line-height: 20px;
+      color: @light-slate-grey;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        background-image: url("../img/icons/check-circle-green.svg");
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}

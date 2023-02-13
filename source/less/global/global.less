@@ -1,0 +1,153 @@
+.page {
+  height: 100%;
+}
+
+.body {
+  min-height: 100%;
+  font-family: "Gotham Pro", "Arial", serif;
+  font-weight: 400;
+  font-size: 16px;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  margin: 0;
+  padding: 0;
+  background-color: @white;
+  color: @black;
+  overflow-x: hidden;
+  position: relative;
+
+  @media (max-width: @mobile-width) {
+    font-size: 12px;
+  }
+}
+
+.body-lock {
+  width: 100%;
+  overflow-y: scroll;
+  position: fixed;
+}
+
+main {
+  min-width: 0;
+  position: relative;
+}
+
+a {
+  color: @black;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  margin: 0;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 215px;
+  height: 54px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: @apple;
+  background-color: initial;
+  border: 2px solid @apple;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  @media (max-width: @mobile-width) {
+    width: 119px;
+    height: 29px;
+    font-size: 10px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: @apple;
+    color: @white;
+    transition-duration: 0.5s;
+  }
+}
+
+.block-heading {
+  padding-bottom: 17px;
+  border-bottom: 1px solid @white-smoke;
+
+  h2 {
+    display: inline-block;
+    margin: 0;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 31px;
+    color: @light-slate-grey;
+    position: relative;
+
+    @media (max-width: @mobile-width) {
+      font-size: 22px;
+    }
+  }
+
+  h2::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: @apple;
+    left: 0;
+    bottom: -18px;
+  }
+
+  &--small {
+    h2 {
+      font-size: 24px;
+      line-height: 23px;
+    }
+
+    @media (max-width: @mobile-width) {
+      font-size: 14px;
+    }
+  }
+
+  &--light {
+    h2 {
+      color: @white;
+    }
+  }
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 40px;
+  margin: 0 auto;
+
+  @media (max-width: @tablet-width) {
+    padding: 0 25px;
+  }
+
+  @media (max-width: @mobile-width) {
+    min-width: 260px;
+    padding: 0 15px;
+  }
+}

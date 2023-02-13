@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Can Style - Достояная мебель для вашей жизни">
+  <title>"Can Style - Достояная мебель для вашей жизни"</title>
+
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/GothamPro.woff2" as="font">
+  <link rel="preload" href="fonts/GothamPro-Bold.woff2" as="font">
+  <link rel="stylesheet" href="css/normalize.css" type="text/css">
+  <link rel="stylesheet" href="css/style.min.css" type="text/css">
+</head>
+
+<body class="body">
+  <header class="header">
+    <div class="container">
+      <div class="header__wrap header__wrap--catalog">
+        <div class="catalog catalog--big"> <!--catalog--open-->
+          <button type="button" class="catalog__toggle ">
+            <span>Меню</span>
+          </button>
+          <ul class="catalog__list">
+            <li><a href="#" class="catalog__link">НАШЕ ПРОИЗВОДСТВО</a></li>
+            <li><a href="#" class="catalog__link">БЕСПЛАТНЫЙ ЗАМЕР</a></li>
+            <li><a href="#" class="catalog__link">ОТЗЫВЫ</a></li>
+            <li><a href="#" class="catalog__link">АКЦИИ</a></li>
+            <li><a href="#" class="catalog__link">КОНТАКТЫ</a></li>
+          </ul>
+        </div>
+        <div class="socials">
+          <a href="#" class="socials__link">
+            <span class="visually-hidden">Instagram</span>
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#Instagram-white"></use>
+            </svg>
+          </a>
+          <a href="#" class="socials__link">
+            <span class="visually-hidden">Одноклассники</span>
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#OK-black"></use>
+            </svg>
+          </a>
+          <a href="tel:+74212667474" class="socials__phone">
+            <span>+7 4212</span>
+            66-74-74
+          </a>
+        </div>
+      </div>
+      <div class="header__wrap">
+        <div class="logo">
+          <div class="logo__img">
+            <picture>
+              <img src="img/logo.svg" alt="Логотип 'Can Style'" width="206" height="64">
+            </picture>
+          </div>
+          <p class="logo__text">Производство мебели на заказ в Хабаровске</p>
+        </div>
+        <button class="logo__button" type="button">
+          Получить консультацию
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#search"></use>
+          </svg>
+        </button>
+        <a href="tel:+74212667474" class="logo__phone">
+          <span>+7 4212</span>
+          66-74-74
+        </a>
+      </div>
+    </div>
+  </header>
+  <nav class="navigation"> <!--navigation--open-->
+    <button type="button" class="navigation__toggle ">
+      <span>Каталог</span>
+    </button>
+    <div class="container">
+      <ul class="navigation__list">
+        <li><a href="#" class="navigation__link">Кухни</a></li>
+        <li><a href="#" class="navigation__link">Прихожие</a></li>
+        <li><a href="#" class="navigation__link">Гардеробные</a></li>
+        <li><a href="#" class="navigation__link">Шкафы-купе</a></li>
+        <li><a href="#" class="navigation__link">Спальни</a></li>
+        <li><a href="#" class="navigation__link">Детские</a></li>
+        <li><a href="#" class="navigation__link">Ванные комнаты</a></li>
+      </ul>
+    </div>
+    <div class="socials">
+      <a href="#" class="socials__link">
+        <span class="visually-hidden">Instagram</span>
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="img/sprite.svg#Instagram-green"></use>
+        </svg>
+      </a>
+      <a href="#" class="socials__link">
+        <span class="visually-hidden">Одноклассники</span>
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="img/sprite.svg#OK-black"></use>
+        </svg>
+      </a>
+      <a href="tel:+74212667474" class="socials__phone">
+        <span>+7 4212</span>
+        66-74-74
+      </a>
+    </div>
+    <button class="navigation__button" type="button">
+      Получить консультацию
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="img/sprite.svg#search"></use>
+      </svg>
+    </button>
+  </nav>
+
+  <main>
+
+    <section class="banners">
+      <h1 class="visually-hidden">Лучшие преддложения</h1>
+      <div class="swiper banners__slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide banners__img">
+            <picture>
+              <source type="image/webp" srcset="img/banner-1.webp 1x, img/banner-1@2x.webp 2x">
+              <img src="img/banner-1.png" alt="Рекламный баннер кухни" width="1920" height="400"
+                srcset="img/banner-1@2x.png 2x">
+            </picture>
+          </div>
+          <div class="swiper-slide banners__img">
+            <picture>
+              <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/banner-2-mob.webp 1x, img/banner-2-mob@2.webp 2x">
+
+              <source media="(max-width: 1023px)"
+              srcset="img/banner-2-mob.jpg 1x, img/banner-2-mob@2.jpg 2x">
+
+              <source type="image/webp" srcset="img/banner-2.webp 1x, img/banner-2@2x.webp 2x">
+              <img src="img/banner-2.png" alt="Скидки на кухни" width="1920" height="400"
+                srcset="img/banner-2@2x.png 2x">
+            </picture>
+          </div>
+          <div class="swiper-slide banners__img">
+            <picture>
+              <source type="image/webp" srcset="img/banner-1.webp 1x, img/banner-1@2x.webp 2x">
+              <img src="img/banner-1.png" alt="Рекламный баннер кухни" width="1920" height="430"
+                srcset="img/banner-1@2x.png 2x">
+            </picture>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <div class="container">
+      <section class="examples">
+        <div class="block-heading">
+          <h2>Примеры работ</h2>
+        </div>
+        <ul class="examples__cards">
+          <li class="examples__item">
+            <picture>
+              <source type="image/webp" srcset="img/examples/kitchen.webp 1x, img/examples/kitchen@2x.webp 2x">
+              <img src="img/examples/kitchen.png" alt="Примеры кухни" width="263" height="291"
+                srcset="img/examples/kitchen@2x.png 2x">
+            </picture>
+            <div class="examples__wrap">
+              <h3>Кухни</h3>
+              <p>от 120 000 ₽</p>
+              <button class="button" type="button">Рассчитать кухню</button>
+            </div>
+          </li>
+          <li class="examples__item">
+            <picture>
+              <source type="image/webp" srcset="img/examples/wardrobes.webp 1x, img/examples/wardrobes@2x.webp 2x">
+              <img src="img/examples/wardrobes.png" alt="Шкафы-купе" width="263" height="291"
+                srcset="img/examples/wardrobes@2x.png 2x">
+            </picture>
+            <div class="examples__wrap">
+              <h3>шкафы-купе</h3>
+              <p>от 70 000 ₽</p>
+              <button class="button" type="button">Рассчитать кухню</button>
+            </div>
+          </li>
+          <li class="examples__item">
+            <picture>
+              <source type="image/webp" srcset="img/examples/closets.webp 1x, img/examples/closets@2x.webp 2x">
+              <img src="img/examples/closets.png" alt="Гардеробные" width="263" height="291"
+                srcset="img/examples/closets@2x.png 2x">
+            </picture>
+            <div class="examples__wrap">
+              <h3>Гардеробные</h3>
+              <p>от 40 000 ₽</p>
+              <button class="button" type="button">Рассчитать кухню</button>
+            </div>
+          </li>
+          <li class="examples__item">
+            <picture>
+              <source type="image/webp" srcset="img/examples/baby.webp 1x, img/examples/baby@2x.webp 2x">
+              <img src="img/examples/baby.png" alt="Детские" width="263" height="291"
+                srcset="img/examples/baby@2x.png 2x">
+            </picture>
+            <div class="examples__wrap">
+              <h3>Детские</h3>
+              <p>от 70 000 ₽</p>
+              <button class="button" type="button">Рассчитать кухню</button>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="container">
+      <section class="categories">
+        <div class="categories__wrap">
+          <div class="block-heading block-heading--small">
+            <h2>Что входит в стоимость</h2>
+          </div>
+          <ul class="categories__list categories__list--cost">
+            <li><span>Замер</span> нашим специалистом</li>
+            <li>Индивидуальный <span>дизайн-проект</span></li>
+            <li>Вся <span>фурнитура</span></li>
+            <li><span>Внутреннее наполнение</span> (полки, ячейки, доводчики)</li>
+            <li class="categories__item"><span>Производство изделия</span> согласно дизайн-проекту</li>
+            <li><span>Доставка и монтаж</span> готовой мебели</li>
+          </ul>
+        </div>
+        <div class="categories__wrap">
+          <div class="block-heading block-heading--small">
+            <h2>Что влияет на цену</h2>
+
+          </div>
+          <ul class="categories__list categories__list--price">
+            <li>Производитель материала (Россия, Австрия)</li>
+            <li>Сложность механических систем</li>
+            <li>Внутреннее наполнение (количество и сложность)</li>
+            <li>Размер и габариты изделия</li>
+            <li>Фурнитура (Blum, Hettich, Samsung, Boyard)</li>
+            <li>Кромочный материал</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <section class="advantages">
+      <div class="container">
+        <div class="block-heading block-heading--light">
+          <h2>Преимущества работы с нами</h2>
+        </div>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <svg width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#production"></use>
+            </svg>
+            <div class="advantages__text">
+              <p><span>Своё производство</span> —<br />
+                выгодные цены</p>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#garantey"></use>
+            </svg>
+            <div class="advantages__text">
+              <p>Гарантия <span>18</span><br /> месяцев</p>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <svg width="54" height="60" viewBox="0 0 54 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#history"></use>
+            </svg>
+            <div class="advantages__text">
+              <p><span>12 лет на рынке.</span><br />
+                Более 3500 реализованных<br />
+                проектов</p>
+            </div>
+          </li>
+          <li class="advantages__item advantages__item--dedicated">
+            <a href="#" class="advantages__question">
+              <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#question"></use>
+              </svg>
+            </a>
+            <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#installments"></use>
+            </svg>
+            <div class="advantages__text">
+              <p><span>Рассрочка платежа</span><br />
+                или оформление кредита</p>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <svg width="50" height="53" viewBox="0 0 50 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#ecology"></use>
+            </svg>
+            <div class="advantages__text">
+              <p><span>Экологически чистые</span>
+                материалы, отказ
+                от китайского ДСП</p>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#oversight"></use>
+            </svg>
+            <div class="advantages__text">
+              <p><span>Индивидуальный надзор</span> за каждым проектом</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="container">
+      <section class="materials">
+        <div class="block-heading">
+          <h2>Используемые материалы</h2>
+        </div>
+        <ul class="materials__list">
+          <li class="materials__item">
+            <picture>
+              <source type="image/webp"
+                srcset="img/materials/materials-1.webp 1x, img/materials/materials-1@2x.webp 2x">
+              <img src="img/materials/materials-1.png" alt="Стеновые панели для кухонных гарнитуров" width="360"
+                height="180" srcset="img/materials/materials-1@2x.png 2x">
+            </picture>
+            <div class="materials__wrap">
+              <h3>Стеновые панели для кухонных гарнитуров</h3>
+              <ul>
+                <li>Влагостойкая ЛДСП покрытая пластиком</li>
+                <li>Скинали (фотопечать на стекле)</li>
+                <li>Искусственный камень</li>
+              </ul>
+            </div>
+          </li>
+          <li class="materials__item">
+            <picture>
+              <source type="image/webp"
+                srcset="img/materials/materials-2.webp 1x, img/materials/materials-2@2x.webp 2x">
+              <img src="img/materials/materials-2.png" alt="ЛДСП" width="360" height="180"
+                srcset="img/materials/materials-2@2x.png 2x">
+            </picture>
+            <div class="materials__wrap">
+              <h3>ЛДСП</h3>
+              <ul>
+                <li>ЛДСП Австрийского производства Эггер</li>
+                <li>ЛДСП Российского производства </li>
+              </ul>
+            </div>
+          </li>
+          <li class="materials__item">
+            <picture>
+              <source type="image/webp"
+                srcset="img/materials/materials-3.webp 1x, img/materials/materials-3@2x.webp 2x">
+              <img src="img/materials/materials-3.png" alt="Мойки из различных материалов" width="360" height="180"
+                srcset="img/materials/materials-3@2x.png 2x">
+            </picture>
+            <div class="materials__wrap">
+              <h3>Мойки из различных материалов</h3>
+              <ul>
+                <li>Интегрированные с передним бортиком</li>
+                <li>Накладные</li>
+                <li>Подшивные</li>
+              </ul>
+            </div>
+          </li>
+          <li class="materials__item">
+            <picture>
+              <source type="image/webp"
+                srcset="img/materials/materials-4.webp 1x, img/materials/materials-4@2x.webp 2x">
+              <img src="img/materials/materials-4.png" alt="Столешницы" width="360" height="180"
+                srcset="img/materials/materials-4@2x.png 2x">
+            </picture>
+            <div class="materials__wrap">
+              <h3>Столешницы</h3>
+              <ul>
+                <li>Влагостойкая столешница из ЛДСП покрытая слоистым пластиком</li>
+                <li>Искусственный камень различных производителей</li>
+                <li>Кварцевый агломерат</li>
+                <li>Компакт-панели</li>
+              </ul>
+            </div>
+          </li>
+          <li class="materials__item">
+            <picture>
+              <source type="image/webp"
+                srcset="img/materials/materials-5.webp 1x, img/materials/materials-5@2x.webp 2x">
+              <img src="img/materials/materials-5.png" alt="Фасады для кухонь" width="360" height="180"
+                srcset="img/materials/materials-5@2x.png 2x">
+            </picture>
+            <div class="materials__wrap">
+              <h3>Фасады для кухонь</h3>
+              <ul>
+                <li>Массив дерева</li>
+                <li>Лакокраска</li>
+                <li>МДФ с лакокраской или пленкой ПВХ</li>
+                <li>HPL пластик</li>
+                <li>Шпон</li>
+                <li>Пластик ПВХ</li>
+                <li>Акриловый пластик</li>
+              </ul>
+            </div>
+          </li>
+          <li class="materials__item">
+            <picture>
+              <source type="image/webp"
+                srcset="img/materials/materials-6.webp 1x, img/materials/materials-6@2x.webp 2x">
+              <img src="img/materials/materials-6.png" alt="Наполнение дверей-купе" width="360" height="180"
+                srcset="img/materials/materials-6@2x.png 2x">
+            </picture>
+            <div class="materials__wrap">
+              <h3>Наполнение дверей-купе</h3>
+              <ul>
+                <li>Готовые декоративные зеркала с рисунком</li>
+                <li>Пластик пвх глянцевый и матовый</li>
+                <li>МДФ под плёнкой</li>
+                <li>Искусственная кожа различных цветов</li>
+                <li>Натуральные материалы (ротанг, бамбук)</li>
+                <li>Зеркала с нанесением пескоструйного рисунка </li>
+                <li>Крашеные стекла</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="container">
+      <section class="rewievs">
+        <div class="block-heading">
+          <h2>Отзывы</h2>
+        </div>
+        <div class="rewievs__rating">
+          <picture>
+            <img src="img/2-gis.svg" alt="Логотип '2 GIS'" width="102" height="33">
+          </picture>
+          <div class="rewievs__wrap">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#star"></use>
+            </svg>
+            <span>5.0</span>
+          </div>
+        </div>
+        <div class="swiper rewievs__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide rewievs__img">
+              <picture>
+                <source type="image/webp" srcset="img/rewievs/Aleksandra.webp 1x, img/rewievs/Aleksandra@2x.webp 2x">
+                <img src="img/rewievs/Aleksandra.png" alt="Отзыв Александры" width="262" height="372"
+                  srcset="img/rewievs/Aleksandra@2x.png 2x">
+              </picture>
+            </div>
+            <div class="swiper-slide rewievs__img">
+              <picture>
+                <source type="image/webp" srcset="img/rewievs/Andrei.webp 1x, img/rewievs/Andrei@2x.webp 2x">
+                <img src="img/rewievs/Andrei.png" alt="Отзыв Андрея" width="262" height="372"
+                  srcset="img/rewievs/Andrei@2x.png 2x">
+              </picture>
+            </div>
+            <div class="swiper-slide rewievs__img">
+              <picture>
+                <source type="image/webp" srcset="img/rewievs/Vladimir.webp 1x, img/rewievs/Vladimir@2x.webp 2x">
+                <img src="img/rewievs/Vladimir.png" alt="Отзыв Владимира" width="262" height="372"
+                  srcset="img/rewievs/Vladimir@2x.png 2x">
+              </picture>
+            </div>
+            <div class="swiper-slide rewievs__img">
+              <picture>
+                <source type="image/webp" srcset="img/rewievs/Maria.webp 1x, img/rewievs/Maria@2x.webp 2x">
+                <img src="img/rewievs/Maria.png" alt="Отзыв Марии" width="262" height="372"
+                  srcset="img/rewievs/Maria@2x.png 2x">
+              </picture>
+            </div>
+            <div class="swiper-slide rewievs__img">
+              <picture>
+                <source type="image/webp" srcset="img/rewievs/Maria.webp 1x, img/rewievs/Maria@2x.webp 2x">
+                <img src="img/rewievs/Maria.png" alt="Отзыв Марии" width="262" height="372"
+                  srcset="img/rewievs/Maria@2x.png 2x">
+              </picture>
+            </div>
+            <div class="swiper-slide rewievs__img">
+              <picture>
+                <source type="image/webp" srcset="img/rewievs/Maria.webp 1x, img/rewievs/Maria@2x.webp 2x">
+                <img src="img/rewievs/Maria.png" alt="Отзыв Марии" width="262" height="372"
+                  srcset="img/rewievs/Maria@2x.png 2x">
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="rewievs__btns">
+          <div class="rewievs__btn rewievs__btn--prev">
+            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </div>
+          <div class="rewievs__btn rewievs__btn--next">
+            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <section class="working">
+        <div class="block-heading">
+          <h2>Как мы работаем</h2>
+        </div>
+        <ul class="working__list">
+          <li class="working__item">
+            <div class="working__number"><span>1</span></div>
+            <svg width="67" height="49" viewBox="0 0 67 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#measuring"></use>
+            </svg>
+            <p class="working__text">
+              Бесплатный замер нашим
+              специалистом, выбор
+              материалов, цвета, разработка<br />
+              дизайн-проекта
+            </p>
+          </li>
+          <li class="working__item">
+            <div class="working__number"><span>2</span></div>
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#contract"></use>
+            </svg>
+            <p class="working__text">
+              Заключение договора,
+              согласование сроков
+              производства
+            </p>
+          </li>
+          <li class="working__item">
+            <div class="working__number"><span>3</span></div>
+            <svg width="64" height="62" viewBox="0 0 64 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#production-2"></use>
+            </svg>
+            <p class="working__text">
+              Производство мебели<br />
+              на нашей фабрике
+            </p>
+          </li>
+          <li class="working__item">
+            <div class="working__number"><span>4</span></div>
+            <svg width="57" height="69" viewBox="0 0 57 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#delivery"></use>
+            </svg>
+            <p class="working__text">
+              Доставка и сборка<br /> мебели
+            </p>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="feedback">
+      <div class="container">
+        <div class="block-heading block-heading--light">
+          <h2>Оставьте заявку сейчас<br/>
+            и поулчите расчет стоимости<br/>
+            в течении 15 минут</h2>
+        </div>
+        <form class="feedback__form" action="#">
+          <label for="name"><input class="feedback__input" type="text" name="name" id="name" placeholder="Имя"></label>
+          <label for="phone"><input class="feedback__input" type="tel" name="phone" id="phone" placeholder="Телефон"></label>
+          <button class="feedback__button" type="submit">
+            Получить консультацию
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+          <div class="feedback__agreement">
+            <p>Нажимая на кнопку я соглашаюсь с условиями использования личной информации</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrap">
+        <div class="logo">
+          <div class="logo__img">
+            <picture>
+              <img src="img/logo-black.svg" alt="Логотип 'Can Style'" width="206" height="64">
+            </picture>
+          </div>
+          <p class="logo__text">Производство мебели на заказ в Хабаровске</p>
+        </div>
+        <div class="socials socials--big">
+          <a href="#" class="socials__link">
+            <span class="visually-hidden">Instagram</span>
+            <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#Instagram-green"></use>
+            </svg>
+          </a>
+          <a href="#" class="socials__link">
+            <span class="visually-hidden">Одноклассники</span>
+            <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#OK-white"></use>
+            </svg>
+          </a>
+          <a href="tel:+74212667474" class="socials__phone socials__phone--black">
+            <span>+7 4212</span>
+            66-74-74
+          </a>
+        </div>
+      </div>
+      <div class="catalog">
+        <ul class="catalog__list">
+          <li><a href="#" class="catalog__link">Наше производство</a></li>
+          <li><a href="#" class="catalog__link">Бесплатный замер</a></li>
+          <li><a href="#" class="catalog__link">Отзывы</a></li>
+          <li><a href="#" class="catalog__link">Акции</a></li>
+          <li><a href="#" class="catalog__link">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+
+  </footer>
+
+
+  <script src="js/vendor.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

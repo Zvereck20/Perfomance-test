@@ -1,0 +1,32 @@
+.header {
+  padding-top: 11px;
+  padding-bottom: 21px;
+  background-color: @black-russian;
+  position: relative;
+
+  @media(max-width: @tablet-width) {
+    padding-bottom: 62px;
+  }
+
+  @media(max-width: @mobile-width) {
+    padding-top: 22px;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &--catalog {
+      @media(max-width: @tablet-width) {
+        .socials {
+          display: none;
+        }
+      }
+    }
+
+    @media(max-width: @tablet-width) {
+      padding: 0 17px;
+    }
+  }
+}

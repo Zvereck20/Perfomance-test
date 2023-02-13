@@ -1,0 +1,129 @@
+.logo {
+  padding-top: 3px;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &__img {
+
+    @media(max-width: @mobile-width) {
+      img {
+        width: 178px;
+      }
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 58px;
+    background-color: @apple;
+    top: 12px;
+    left: 260px;
+
+    @media(max-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  &__text {
+    padding-left: 92px;
+    padding-top: 8px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 13px;
+    letter-spacing: 0.05em;
+    color: @light-slate-grey;
+    text-transform: uppercase;
+
+    @media(max-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  &__button {
+    margin: 0;
+    margin-top: 14px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 281px;
+    height: 54px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: @white;
+    background-color: initial;
+    border: 2px solid @apple;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition-duration: 0.3s;
+
+    svg {
+      stroke: @white;
+      padding-left: 13px;
+    }
+
+    &:hover,
+    &focus {
+      border: 2px solid @white;
+      color: @apple;
+      transition-duration: 0.5s;
+
+      svg {
+        stroke: @apple;
+        transition-duration: 0.5s;
+      }
+    }
+
+    @media(max-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  &__phone {
+    display: none;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 21px;
+    color: @white;
+    text-align: right;
+
+    span {
+      display: block;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 15px;
+    }
+
+    &--black {
+      color: @black-russian;
+    }
+
+    &:hover,
+    &focus {
+      opacity: 0.3;
+      transition-duration: 0.9s;
+    }
+
+    @media(max-width: @tablet-width) {
+      display: block;
+    }
+
+    @media(max-width: @mobile-width) {
+      padding-top: 9px;
+      font-size: 24px;
+      line-height: 23px;
+
+      span {
+        padding-bottom: 3px;
+        font-size: 16px;
+        line-height: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.banners {
+
+  &__slider {
+    padding-bottom: 46px;
+  }
+
+  &__img {
+    img {
+      width: 100%;
+      height: 400px;
+
+      @media (max-width: @tablet-width) {
+        width: 100%;
+        height: 420px;
+      }
+    }
+  }
+
+  .swiper-pagination {
+    position: absolute;
+    width: 100%;
+
+    bottom: 0;
+    left: 0;
+  }
+}

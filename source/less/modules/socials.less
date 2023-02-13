@@ -1,0 +1,49 @@
+.socials {
+  padding-top: 6px;
+  padding-right: 7px;
+  display: flex;
+
+  @media (max-width: @mobile-width) {
+    padding: 0;
+  }
+
+  &--big {
+    align-items: center;
+  }
+
+  &__link {
+    display: block;
+    padding-right: 5px;
+
+    &:hover,
+    &focus {
+      transform: rotate(360deg);
+      transition-duration: 0.9s;
+    }
+  }
+
+  &__phone {
+    display: block;
+    padding-left: 41px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 21px;
+    color: @white;
+
+    span {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 15px;
+    }
+
+    &--black {
+      color: @black-russian;
+    }
+
+    &:hover,
+    &focus {
+      opacity: 0.3;
+      transition-duration: 0.9s;
+    }
+  }
+}
